@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* Style the body */
+        body {
+            font-family: Arial;
+            margin: 3;
+        }
+
+        /* Header/logo Title */
+        header {
+            padding: 30px;
+            text-align: center;
+            background: #abe9dd;
+            color: rgb(194, 139, 187);
+        }
+
+        /* Style the top navigation bar */
+        nav {
+            color: blanchedalmond;
+            background-color:cornflowerblue;
+        }
+
+        /* contenedor de columnas o principal */
+        .contenedor {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* crea dos columnas que se situan una al lado de la otra  */
+        /* Sidebar/left column */
+        aside {
+            float: left;
+            flex: 30%;
+            background-color: #f1f1f1;
+            display:  block;
+            
+        }
+
+        /* Main column */
+        .main {
+            flex: left;
+            background-color: white;
+            padding: 30px;
+            width:90% ;
+            text-align: center;
+        }
+
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #1abc9c;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img height="150px" width="200px" src="flexbox-cssgrid.png" alt="">
+        <h1> Sitio web como herramienta de los temas <br> FlexBox y Css Grid</h1>
+    </header>
+    <!-- Barra de navegación, la cual se debe  personalizar con un menú desplegable -->
+    <nav>
+        <ul>
+            <li>
+                <a href="inicio.html">Inicio</a>
+            </li>
+            <li>temas
+                <ul>
+                    <li><a href="tema1.html">tema1</a></li>
+                    <li><a href="tema2.html">tema 2</a></li>
+                </ul>
+            </li>
+            <li>Recursos digitales
+                <ul>
+                    <li> <a href="Recurso1.html">Recurso 1</a> </li>
+                    <li><a href="Recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li>Aprendizajes
+                <ul>
+                    <li> <a href="Cuestionario1.html">Cuestionario 1</a> </li>
+                    <li><a href="Cuestionario2.html">Cuestionario 2</a></li>
+                </ul>
+            </li>
+            <li>Plan de Mejoramiento
+                <ul>
+                    <li> <a href="Mejoradelsitio.html">Recurso 1</a> </li>
+                </ul>
+            </li>
+            <li>Autor</li>
+            <ul>
+                <li> <a href="Autor.html">Mi informacion</a> </li>
+            </ul>
+        </ul>
+    </nav>
+
+    <!-- The flexible grid (content) -->
+    <div class="contenedor">
+        <aside>
+            <h5> Social plugin facebook- Unad</h5>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+
+        <section class="main">
+            
+            <h1>Css Grid </h1>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y-lQeSgWOV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h6>Creacion de zalma moreno.Con Visual Basic Studio</h6>
+    </footer>
+</body>
+</html>

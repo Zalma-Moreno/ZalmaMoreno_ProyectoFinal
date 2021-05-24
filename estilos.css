@@ -1,0 +1,49 @@
+/* Style the body */
+body {
+  font-family: Arial;
+}
+
+/* Header/logo Title */
+header {
+  padding: 30px;
+  text-align: center;
+  background: #abe9dd;
+  color: rgb(194, 139, 187);
+}
+
+/* Style the top navigation bar */
+nav {
+  color: blanchedalmond;
+  background-color: cornflowerblue;
+}
+
+/* contenedor de columnas o principal */
+.contenedor {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* crea dos columnas que se situan una al lado de la otra  */
+/* Sidebar/left column */
+aside {
+  float: left;
+  flex: 30%;
+  background-color: #f1f1f1;
+  display: block;
+}
+
+/* Main column */
+.main {
+  background-color: white;
+  padding: 30px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+}

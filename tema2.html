@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+/* Style the body */
+body {
+            font-family: Arial;
+            margin: 3;
+        }
+
+        /* Header/logo Title */
+        header {
+            padding: 30px;
+            text-align: center;
+            background: #abe9dd;
+            color: rgb(194, 139, 187);
+        }
+
+        /* Style the top navigation bar */
+        nav {
+            color: blanchedalmond;
+            background-color:cornflowerblue;
+        }
+
+        /* contenedor de columnas o principal */
+        .contenedor {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* crea dos columnas que se situan una al lado de la otra  */
+        /* Sidebar/left column */
+        aside {
+            float: left;
+            flex: 30%;
+            background-color: #f1f1f1;
+            display:  block;
+            
+        }
+
+        /* Main column */
+        .main {
+            flex: left;
+            background-color: white;
+            padding: 30px;
+            width:90% ;
+            text-align: center;
+        }
+
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #1abc9c;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img height="150px" width="200px" src="flexbox-cssgrid.png" alt="">
+        <h1> Sitio web como herramienta de los temas <br> FlexBox y Css Grid</h1>
+    </header>
+    <!-- Barra de navegación, la cual se debe  personalizar con un menú desplegable -->
+    <nav>
+        <ul>
+            <li>
+                <a href="inicio.html">Inicio</a>
+            </li>
+            <li>temas
+                <ul>
+                    <li><a href="tema1.html">tema1</a></li>
+                    <li><a href="tema2.html">tema 2</a></li>
+                </ul>
+            </li>
+            <li>Recursos digitales
+                <ul>
+                    <li> <a href="Recurso1.html">Recurso 1</a> </li>
+                    <li><a href="Recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li>Aprendizajes
+                <ul>
+                    <li> <a href="Cuestionario1.html">Cuestionario 1</a> </li>
+                    <li><a href="Cuestionario2.html">Cuestionario 2</a></li>
+                </ul>
+            </li>
+            <li>Plan de Mejoramiento
+                <ul>
+                    <li> <a href="Mejoradelsitio.html">Recurso 1</a> </li>
+                </ul>
+            </li>
+            <li>Autor</li>
+            <ul>
+                <li> <a href="Autor.html">Mi informacion</a> </li>
+            </ul>
+        </ul>
+    </nav>
+
+    <!-- The flexible grid (content) -->
+    <div class="contenedor">
+        <aside>
+            <h5> Social plugin facebook- Unad</h5>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+
+        <section class="main">
+            
+            <h1>TEMA: Css Grid </h1>
+            <h4>Propósito:</h4>
+            <p>Este sitio tiene como proposito fomentar el aprendizaje de los <br>
+                conceptos correspondientes al tema que seleccioné llamado Css Grid</p>
+
+            <article>
+            <h3>CSS GRID</h3>
+            <img src="css1.png" alt="Mockplus" width="400" height="200">
+            <h6>Figura1.Imagen de guia completa para aprender a utilizar CSS Grid Layout.Tomado de https://www.programandoamedianoche.com/2019/05/guia-completa-para-aprender-a-utilizar-css-grid-layout/ </h6>
+            <p>
+                Css Grid es la mejor opción para estructurar, organizar y diseñar los<br>
+                elementos de nuestro sitio web, ofreciéndonos un sistema de disposición<br>
+                apropiado de forma nativa en el navegador y a nuestra total disposición.<br>
+                En Css solemos utilizar múltiples propiedades para estructurar nuestros <br>
+                sitio web, utilizando tablets, inline-block, floats, relative o hasta el <br>
+                mismo flexbox que solo utiliza una dimensión.
+
+            </p>
+            <h4>Terminologia en Grid</h4>
+            <p>
+                -Grid Container: Es nuestro elemento “Padre”, donde se asigna un {display:grid;}<br>
+                y nos permitirá colocar otras propiedades para manipular nuestro diseño.<br>
+                -Grid Item: Son los hijos directos de nuestro container, estos los manejaremos<br>
+                a nuestra voluntad, nuestras filas y columnas que moveremos a nuestro gusto.<br>
+                -Grid Line: Son las lineas divisorias horizontales y verticales.<br>
+                -Grid Track: Es el Espacio entre dos líneas adyacentes. Filas y columnas.<br>
+                -Grid Cell: Nuestras celdas serán el espacio entre dos filas adyacentes y 2 columnas adyacentes.<br>
+                -Grid Area: Espacio rodeado por 4 grid lines
+            </p>
+            <h4>Crear contenedores y elementos</h4>
+            <p>
+                CSS grid emplea dos unidades diferentes: contenedores y elementos. El contenedor <br>
+                es el nivel superior y en él se definen las propiedades que luego tendrán todos los<br>
+                elementos. Desde un punto de vista jerárquico, un elemento está dentro de un contenedor.<br>
+                Además de eso, se sigue necesitando HTML para el diseño de la rejilla o grid. En la parte HTML<br>
+                del código fuente, se crean los elementos individuales (texto, gráficos, etc.), que luego se recogen <br>
+                dentro de CSS grid y se disponen en la posición correcta.    
+             </p>
+            
+            <img src="css2.png" alt="Mockplus" width="400" height="200">
+            <h6>Figura2.Imagen de Css Grid,la mejor opcion para crear diseños web.Tomado de https://www.programandoamedianoche.com/2019/05/guia-completa-para-aprender-a-utilizar-css-grid-layout/</h6>
+            <h4>Columnas y filas</h4>
+            <p>
+                En cuando se trabaj columnas y filas podemos decir que en Css Grid ,podemos crear cuadriculas,donde<br>
+                se distribuyen y se forman dependiendo a donde las quiera puestas el usuario.
+            </p>
+
+            </article>
+            <h4>Attardi J. (2020) Flexbox. In: Modern CSS. Apress, Berkeley, CA.Pag 229-253. https://doi.org/10.1007/978-1-4842-6294-8_10</h4>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h6>Creacion de zalma moreno.Con Visual Basic Studio</h6>
+    </footer>
+</body>
+</html>
